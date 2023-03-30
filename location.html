@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body id="Homebackground">
+    <header>
+      <div class="WGnav" id="myWGnav">
+        <a href="index.html">
+          <img
+            src="https://cdn.glitch.com/8cfdbb89-01b0-4643-85ff-0fd248c88c9c%2FBurger.jpg?v=1600896811318"
+            alt="Logo"
+            class="Gimage"
+            style="background-color: white"
+          />
+        </a>
+        <div class="GNav">
+          <a href="index.html">Restaurant</a>
+          <a href="location.html">Location</a>
+          <a href="comment.html">Comment</a>
+        </div>
+      </div>
+    </header>
+    <p>
+      You can click on the text to show the location of the map, or you can
+      click on the images in the restaurant to go to their official websites.
+    </p>
+    <table style="width: 100%" border="2" cellpadding="10" cellspacing="5">
+      <tr>
+        <th>Breakfast</th>
+        <th>Lunch</th>
+        <th>Dinner</th>
+        <th>Dessert</th>
+      </tr>
+
+      <tr>
+        <td>
+          <a class="location-name" onclick="myFunction1()">Hi-Collar</a>
+          <div id="Rest1" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4897613138337!2d-73.98821038459452!3d40.72924757933003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599c4b4c2267%3A0xcfea0fb3f579b4e8!2sHi-Collar!5e0!3m2!1sen!2sus!4v1494702513298"
+              width="300"
+              height="200"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </td>
+        <td>
+          <a class="location-name" onclick="myFunction2()">Takashi Ramen</a>
+          <div id="Rest2" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3894588359003!2d-74.00861018459446!3d40.73145507932972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ecd510258b%3A0x984d697b777d3c4e!2sTakashi!5e0!3m2!1szh-CN!2sus!4v1494709006036"
+              width="300"
+              height="200"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </td>
+        <td>
+          <a class="location-name" onclick="myFunction4()"
+            >OutBack SteakHouse</a
+          >
+          <div id="Rest4" style="display: none">
+            <iframe
+              src="https://maps.google.com/maps?q=Outback%20Steakhouse%2C%2060%20W%2023rd%20St%2C%20New%20York%2C%20NY%2010010&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="300"
+              height="200"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </td>
+        <td>
+          <a class="location-name" onclick="myFunction5()">Spot Dessert Bar</a>
+          <div id="Rest5" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.483147388132!2d-73.99111058482502!3d40.72939314448853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599b879e00d1%3A0x353ed2ebde7fd287!2sSpot+Dessert+Bar!5e0!3m2!1szh-CN!2sus!4v1494710709502"
+              width="300"
+              height="200"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <a class="location-name" onclick="myFunction3()">Burger & Lobster</a>
+          <div id="Rest3" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.99407115354!2d-73.99555468459415!3d40.74015597932883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a33de8fa23%3A0x9899b737febc0a7f!2sBurger+%26+Lobster!5e0!3m2!1szh-CN!2sus!4v1494709233404"
+              width="300"
+              height="200"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </td>
+        <td></td>
+        <td>
+          <a class="location-name" onclick="myFunction6()">Dutch Fred's</a>
+          <div id="Rest6" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.056681669829!2d-73.99006468482409!3d40.760778042567374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25856a7393527%3A0x416fee52ce2a3c9e!2sDutch+Fred&#39;s!5e0!3m2!1szh-CN!2sus!4v1494710858609"
+              width="300"
+              height="200"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurant</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+</head>  
+
+<body id="Homebackground">
+<header>
+<div class="WGnav" id="myWGnav">
+<a href="index.html">
+<img src="https://cdn.glitch.com/8cfdbb89-01b0-4643-85ff-0fd248c88c9c%2FBurger.jpg?v=1600896811318" alt="Logo" class="Gimage" style="background-color:white;">
+</a>
+<div class="GNav">
+	<a href = "index.html">Restaurant</a>
+  <a href = "location.html">Location</a>
+  <a href = "comment.html">Comment</a>
+ </div>
+</div>
+</header>
+    <div class="alert">
+      Your comment has been added to our database, Thank you for your feedback.
+    </div>
+
+  <h2 id="feedback">
+    Please provide feedback
+  </h2>
+  
+    <form id="contactForm" >
+      <p>
+        <label>Name</label>
+        <input type="text" placeholder="Enter Name" name="name" id="name" required> 
+      </p>
+      <p>
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required> 
+      </p>
+      <p>
+        <label>Comment</label>
+        <input type="text" placeholder="Enter Comment" name="comment" id="comment" required> 
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </body>
+</html>
